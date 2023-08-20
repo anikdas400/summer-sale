@@ -53,7 +53,7 @@ body{
                     <h2 class="text-4xl mt-5 mb-8 font-semibold">Kitchenware</h2>
                  <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
                     <!-- prod-1 -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod1PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod1.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -73,13 +73,13 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">K. Accessories</h2>
-                          <p><span>39.00</span>TK</p>
+                          <p><span id="prod-1">39.00</span>TK</p>
                           
                         </div> 
                                          
                     </div>
                     <!-- prod-2 -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod2PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod2.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -98,8 +98,8 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-1" />
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
-                          <h2 class="card-title">K. Accessories</h2>
-                          <p><span>25.00</span>TK</p>
+                          <h2 class="card-title">kitchen A.</h2>
+                          <p><span id="prod-2">25.00</span>TK</p>
                           
                         </div> 
     
@@ -315,21 +315,21 @@ body{
                     <div class="mb-5 bg-slate-100 p-2 rounded-lg">
                         <h2 class="text-2xl mb-3 font-medium">Have coupon?</h2>
                         <div class="mb-5 border-[2px]">
-                            <input type="text" placeholder="Coupon code" class="w-3/4 bg-slate-300 px-4"><button class="bg-pink-500 w-1/4 text-white font-semibold px-2">Apply</button>
+                            <input type="text" placeholder="Coupon code" class="w-3/4 bg-slate-300 px-4 py-3 rounded-lg"><button disabled class="btn bg-pink-500 w-1/4  text-white font-semibold">Apply</button>
                         </div>
                     </div>
                     <div class="bg-slate-100 p-2 rounded-lg">
-                        <div>
+                        <div id="product-entry">
 
                         </div>
                         <hr>
                         <div class="mb-5">
-                            <p>Total price: <span>00.00</span></p>
-                            <h2>Discount : <span>00.00</span></h2>
-                            <h3>Total: <span>00.00</span></h3>
+                            <p>Total price: <span id="t-price">00.00</span>TK</p>
+                            <h2>Discount : <span id="discount">00.00</span>TK</h2>
+                            <h3>Total: <span id="total">00.00</span>TK</h3>
                         </div>
                         <hr>
-                        <button class="btn bg-pink-500 w-full mt-5">Make Purchase</button>
+                        <button disabled id="submit" class="btn bg-pink-500 w-full mt-5">Make Purchase</button>
                     </div>
                 </div>
             </div>
@@ -338,5 +338,6 @@ body{
 
     
     <script src="summer.js"></script>
+    <script src="calculation.js"></script>
 </body>
 </html>
