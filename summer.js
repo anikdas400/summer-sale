@@ -5,6 +5,12 @@ function getElementValue (fieldId){
     const elementValue = parseFloat(elementValuestring)
     return elementValue;
 }
+function getInputValue (fieldId){
+    const InputField = document.getElementById(fieldId)
+    const InputValuestring = InputField.value
+    
+    return InputValuestring;
+}
 
 function addToProductEntry(prodType){
     const productEntry = document.getElementById('product-entry')
@@ -19,3 +25,6 @@ function setElementInnerText (elementId,total){
     const element = document.getElementById(elementId)
     element.innerText = total
 }
+
+
+

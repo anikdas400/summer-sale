@@ -105,7 +105,7 @@ body{
     
                     </div>
                     <!-- prod-3 -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod3PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod3.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -125,7 +125,7 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">Home Cooker</h2>
-                          <p><span>49.00</span>TK</p>
+                          <p><span id="prod-3">49.00</span>TK</p>
                           
                         </div> 
                     </div>
@@ -140,7 +140,7 @@ body{
                  <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
                     <!-- prod-4 -->
                     
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod4PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod4.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -160,13 +160,13 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">Sports Back Cap</h2>
-                          <p><span>49.00</span>TK</p>
+                          <p><span id="prod-4">49.00</span>TK</p>
                           
                         </div> 
                                          
                     </div>
                     <!-- prod-5 -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod5PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod5.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -186,13 +186,13 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">Full Jersey Set</h2>
-                          <p><span>69.00</span>TK</p>
+                          <p><span id="prod-5">69.00</span>TK</p>
                           
                         </div> 
     
                     </div>
                     <!-- prod-6 -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod6PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod6.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -212,7 +212,7 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">Sports cates</h2>
-                          <p><span>159.00</span>TK</p>
+                          <p><span id="prod-6">159.00</span>TK</p>
                           
                         </div> 
                     </div>
@@ -227,7 +227,7 @@ body{
                  <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
                     <!-- prod-7 -->
                     
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod7PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod7.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -247,13 +247,13 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">Single Relax Chair</h2>
-                          <p><span>185.00</span>TK</p>
+                          <p><span id="prod-7">185.00</span>TK</p>
                           
                         </div> 
                                          
                     </div>
                     <!-- prod-8 -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod8PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod8.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -273,13 +273,13 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">Children play</h2>
-                          <p><span>299.00</span>TK</p>
+                          <p><span id="prod-8">299.00</span>TK</p>
                           
                         </div> 
     
                     </div>
                     <!-- prod-9 -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div onclick="prod9PriceCalculate()" class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 ">
                           <img src="./images/prod9.png" alt="prod1" class="rounded-xl" />
                         </figure>
@@ -299,7 +299,7 @@ body{
                                 <input type="radio" name="rating-10" class="bg-amber-400 mask mask-star-2 mask-half-2" />
                             </div>
                           <h2 class="card-title">Flexible Sofa</h2>
-                          <p><span>339.00</span>TK</p>
+                          <p><span id="prod-9">339.00</span>TK</p>
                           
                         </div> 
                     </div>
@@ -315,7 +315,7 @@ body{
                     <div class="mb-5 bg-slate-100 p-2 rounded-lg">
                         <h2 class="text-2xl mb-3 font-medium">Have coupon?</h2>
                         <div class="mb-5 border-[2px]">
-                            <input type="text" placeholder="Coupon code" class="w-3/4 bg-slate-300 px-4 py-3 rounded-lg"><button disabled class="btn bg-pink-500 w-1/4  text-white font-semibold">Apply</button>
+                            <input type="text" id="code" placeholder="Coupon code" class="w-3/4 bg-slate-300 px-4 py-3 rounded-lg"><button disabled id="update-btn" class="btn bg-pink-500 hover:bg-green-400 w-1/4  text-white font-semibold">Apply</button>
                         </div>
                     </div>
                     <div class="bg-slate-100 p-2 rounded-lg">
@@ -329,7 +329,35 @@ body{
                             <h3>Total: <span id="total">00.00</span>TK</h3>
                         </div>
                         <hr>
-                        <button disabled id="submit" class="btn bg-pink-500 w-full mt-5">Make Purchase</button>
+                        <button disabled id="submit" class="btn bg-pink-500 w-full mt-5"  onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <!-- Open the modal using ID.showModal() method -->
+
+                       <dialog id="my_modal_1" class="modal">
+                         <form method="dialog" class="modal-box">
+                       
+                       
+                           <div class="card bg-base-100 shadow-xl">
+                               <figure class="px-10 pt-10">
+                                 <img src="./images/congo.png" alt="congo" class="rounded-xl" />
+                               </figure>
+                               <div class="card-body items-center text-center">
+                                 <h2 class="card-title text-3xl font-bold">Congratulations</h2>
+                                 <p>Your Purchase the product</p>
+                       
+                                 <div class="modal-action">
+                                   <!-- if there is a button in form, it will Go Home the modal -->
+                                   <button id="goHome" class="btn  bg-pink-500 w-full">Go Home</button>
+                                 </div>
+                               </div>
+                             </div>
+                       
+                           
+                         </form>
+                       </dialog>
+
+                        
+
+
                     </div>
                 </div>
             </div>
